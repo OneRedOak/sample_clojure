@@ -1,4 +1,4 @@
 Clojure Sample
 =====================
 
-Simple Clojure app.
+Simple Clojure app using clojure.test for unit tests.

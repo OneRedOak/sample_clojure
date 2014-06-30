@@ -1,6 +1,6 @@
-(ns sample.core)
+(ns sample.core
+  (:gen-class))
 
 (defn -main
-  "I don't do a whole lot."
-  [& args]
-  (println "Hello, World!"))
+  [number]
+  (int (* 3 number)))

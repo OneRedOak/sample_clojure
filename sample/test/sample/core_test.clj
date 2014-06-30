@@ -3,5 +3,5 @@
             [sample.core :refer :all]))
 
 (deftest a-test
-  (testing "FIXME, I fail."
-    (is (= 0 1))))
+  (testing "Simple addition"
+    (is (= 15 (-main 5)))))
