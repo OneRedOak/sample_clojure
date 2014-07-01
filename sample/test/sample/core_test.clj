@@ -1,4 +1,4 @@
-(ns sample.core-test
+(ns sample.core-test 
   (:require [clojure.test :refer :all]
             [sample.core :refer :all]))
 

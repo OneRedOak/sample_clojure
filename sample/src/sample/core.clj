@@ -2,5 +2,5 @@
   (:gen-class))
 
 (defn -main
-  [number]
-  (int (* 3 number)))
+    [number]
+    (int (* 3 number)))

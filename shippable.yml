@@ -1,6 +1,7 @@
 # Language setting
 language: clojure
 
+# Defines version of Leiningen used for automating Clojure builds
 lein:
   - 2.4.2
 
@@ -13,3 +14,7 @@ before_script:
 script:
   - cd sample
   - lein test
+  - lein cloverage --emma-xml
+
+after_script:
+  - mv $PWD/sample/target/coverage/coverage.xml $PWD/shippable/codecoverage/

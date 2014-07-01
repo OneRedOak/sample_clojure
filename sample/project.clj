@@ -6,4 +6,5 @@
   :dependencies [[org.clojure/clojure "1.5.1"]]
   :main ^:skip-aot sample.core
   :target-path "target/%s"
-  :profiles {:uberjar {:aot :all}})
+  :profiles {:uberjar {:aot :all}}
+  :plugins [[lein-cloverage "1.0.2"]])
