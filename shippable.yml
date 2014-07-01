@@ -13,8 +13,11 @@ before_script:
 # Running the test with Leiningen
 script:
   - cd sample
-  - lein test
+  - lein test-out junit junit.xml
   - lein cloverage --emma-xml
 
 after_script:
-  - mv $PWD/sample/target/coverage/coverage.xml $PWD/shippable/codecoverage/
+  - ls
+  - echo $PWD
+  - mv sample/junit.xml shippable/testresults
+  - mv sample/target/coverage/coverage.xml shippable/codecoverage

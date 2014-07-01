@@ -7,4 +7,5 @@
   :main ^:skip-aot sample.core
   :target-path "target/%s"
   :profiles {:uberjar {:aot :all}}
-  :plugins [[lein-cloverage "1.0.2"]])
+  :plugins [[lein-cloverage "1.0.2"]
+  			[lein-test-out "0.3.1"]])
