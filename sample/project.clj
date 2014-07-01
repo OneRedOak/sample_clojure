@@ -8,4 +8,5 @@
   :target-path "target/%s"
   :profiles {:uberjar {:aot :all}}
   :plugins [[lein-cloverage "1.0.2"]
-  			[lein-test-out "0.3.1"]])
+  			[org.clojure/tools.namespace "0.2.3"]]
+  :eval-in-leiningen true)
